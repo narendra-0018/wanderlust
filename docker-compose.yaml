@@ -17,6 +17,7 @@ services:
       - "5000:5000"
     depends_on:
       - mongo
+
   frontend:
     # container-name: frontend
     build: ./frontend
@@ -24,7 +25,7 @@ services:
       - ./backend/.env.sample
     ports:
       - "5173:5173"
-
+# volumes add the data from mongo db
 volumes:
   data:
 
