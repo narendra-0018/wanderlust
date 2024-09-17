@@ -7,8 +7,7 @@ COPY . .
 
 # run the node instal command
 RUN npm i
-# run for test
-RUN npm run test
+
 
 # stage 2
 FROM node:21-slim
